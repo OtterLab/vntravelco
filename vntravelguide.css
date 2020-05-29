@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling mobile content layout */
+.mobile-container {
+    width: 370px;
+    height: 640px;
+    background-color: white;
+    position: relative;
+}
+
+.content {
+    height: auto;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 3em;
+}
+
+section {
+    margin-top: .5em;
+}
+
+.divider {
+    margin-top: 2rem;
+    width: 305px;
+    height: 5px;
+    opacity: 15%;
+    margin-left: 1.2em;
+}
+
+.divider2 {
+    width: 305px;
+    height: 5px;
+    opacity: 15%;
+    margin-top: -2em;
+    margin-left: 1.2em;
+}
+
+.carousel-inner {
+    margin-top: 1.5em;
+}
+
+/* navigation menu */
+.main-nav {
+    height: 55px;
+    overflow: auto;
+    bottom: 0%;
+    background-color: orange; /* orange background */
+    position: fixed;
+    width: 370px;
+}
+
+.main-nav + .content {
+    padding-bottom: 60px;
+}
+
+.main-nav a {
+    text-align: center;
+    float: left;
+    display: block;
+    padding: 15px 10px;
+    width: 25%;
+    transition: all 0.3s;
+    color: white;
+    font-size: 25px;
+}
+
+.main-nav :hover {
+    background-color: black;
+    color: orange; /* change the icon in color orange when hover */
+}
+
+.menu-active {
+    background-color: black;
+}
+
+.nav i {
+    pointer-events: none;
+    font-size: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* styling the section page 1 */
+.vn-about {
+    padding: 15px;
+}
+
+.vn-about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.vn-about p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 3em;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+svg {
+    width: 30%;
+    margin-left: 6.7em;
+}
+
+/* style svg icon */
+.st0 {
+    fill:#00A651;
+}
+
+.st1 {
+    fill:#662D91;
+}
+
+.st2{ 
+    fill:#BE1E2D;
+}
+
+/* accordion */
+.accordion {
+    margin-top: 2em;
+    padding: 10px;
+}
+
+.copy {
+    font-size: 10pt;
+}
+
+.btn-link {
+    font-size: 11pt;
+}
+
+.travel h2 {
+    text-align: center;
+    font-size: 15pt;
+    margin-top: 1.5em;
+}
+
+/* thumbnail */
+h3 {
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+.sub-heading {
+    font-size: 15pt;
+    color: orange;
+    padding-bottom: .6em;
+    font-weight: bold;
+}
+
+.thumbnail-card {
+    text-align: center;
+}
+
+.thumbnail-card img {
+    width: 250px;
+    padding-top: 1.5em;
+}
+
+.copy-text h5 {
+    font-size: 12pt;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.copy-text p {
+    font-size: 10pt;
+    padding: 10px;
+}
+
+.btn-link {
+    color: black;
+}
+
+/* contact form */
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-copy {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    padding: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+
+.form-heading {
+    font-family: 'Roboto';
+    font-size: 15pt;
+    color: black;
+    margin: 0;
+}
+
+#form-container {
+    padding: 18px;
+    margin: 10px;
+}
+
+label {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    font-weight: bold;
+    color: black;
+    display: none; /* hide the label in mobile view */
+}
+
+input[type=text], input[type=email] {
+    border: 1px solid orange;
+    border-radius: 3px;
+    padding: 6px 10px;
+    width: 300px;
+}
+
+textarea {
+    border: 1px solid orange;
+    border-radius: 3px;
+    width: 300px;
+    height: 100px;
+    padding: 6px 10px;
+}
+
+input[type=submit] {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    color: black;
+    font-weight: bold;
+    width: 300px;
+    border: 1px solid orange;
+    border-radius: 3px;
+    background: none;
+    padding: 6px 10px;
+    margin-bottom: 1.2em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: orange;
+}
