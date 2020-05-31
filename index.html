@@ -22,7 +22,7 @@
                     <div class="col-sm">
                         <!----------------------------------Section 1------------------------------------->
                         <section id="home">
-                            <i class="fas fa-info-circle" style="font-size: 70px; margin-bottom: .3em; margin-left: 1.9em; margin-top: .3em; color: orange;"></i>
+                            <i class="fas fa-info-circle"></i>
                             <h5>Override Framework animation</h5>
                             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
@@ -65,12 +65,14 @@
                         <!----------------------------------Section 2------------------------------------->
                         <section class="hidden" id="info">
                             <!---------------SVG icon element------------->
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
-                                <rect x="9.4" y="10.5" class="st0" width="17" height="18.9"/>
-                                <circle class="st1" cx="12.5" cy="13.1" r="8"/>
-                                <polygon class="st2" points="26.5,15.4 29.5,21.6 36.3,22.6 31.4,27.4 32.5,34.1 26.5,30.9 20.4,34.1 21.5,27.4 16.6,22.6 23.4,21.6 "/>
-                            </svg>
+                            <div class="svg-icon">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                                    <rect x="9.4" y="10.5" class="st0" width="17" height="18.9"/>
+                                    <circle class="st1" cx="12.5" cy="13.1" r="8"/>
+                                    <polygon class="st2" points="26.5,15.4 29.5,21.6 36.3,22.6 31.4,27.4 32.5,34.1 26.5,30.9 20.4,34.1 21.5,27.4 16.6,22.6 23.4,21.6 "/>
+                                </svg>
+                            </div>
                             <svg class="divider">
                                 <line x1="0" x2="305" style="stroke: black; stroke-width: 3"/>
                             </svg>
@@ -167,7 +169,7 @@
                         </section>
                         <!----------------------------------Section 3------------------------------------->
                         <section class="hidden" id="guide">
-                            <i class="fas fa-map-marker-alt" style="font-size: 70px; margin-bottom: .3em; margin-left: 2em; margin-top: .3em; color: orange;"></i>
+                            <i class="fas fa-map-marker-alt"></i>
                             <h3>Sightseeing and Landmarks</h3>
                         <!--divider element separator-->
                         <svg class="divider">
@@ -232,38 +234,42 @@
                             </div>
                         </div>
                         </section>
+                        <!---------------------------------------------contact page------------------------------------->
+                        <section class="hidden" id="contact">
+                        <i class="fas fa-wifi"></i>
+                        <h3 class="form-heading">Get Connect</h3>
+                            <p class="form-copy">If you have any enquiries or more information about our website, please contact us.</p>
+                            <!--divider element separator-->
+                            <svg class="divider">
+                                <line x1="0"x2="305" style="stroke:black; stroke-width:2"/>
+                            </svg>
+                        <form id="contact-form" action="#" onsubmit="return validate()" method="POST">
+                            <div id="form-container">
+                            <div class="form-group">
+                            <label for="FormControlInput1">Full Name</label>
+                            <input type="text" class="form-control" id="FormControlInput1" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlInput3">Email</label>
+                            <input type="email" class="form-control" id="FormControlInput3" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="FormControlInput5">Message</label>
+                            <textarea class="message" col="4" row="5" id="FormControlInput6" placeholder="Message here..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                    </form>
+                    </section>
+                    <!----------footer--------------->
+                    <footer>
+                        <p>&copy; 2020 LT Creatve. All rights reserved.</p>
+                    </footer>
                     </div>
                 </div>
             </div>
-            <!---------------------------------------------contact page------------------------------------->
-            <section class="hidden" id="contact">
-                <i class="fas fa-wifi" style="font-size: 70px; margin-bottom: .3em; margin-top: -.1em; margin-left: 2.1em; color: orange;"></i>
-                <h3 class="form-heading">Get Connect</h3>
-                    <p class="form-copy">If you have any enquiries or more information about our website, please contact us.</p>
-                    <!--divider element separator-->
-                    <svg class="divider">
-                        <line x1="0"x2="305" style="stroke:black; stroke-width:2"/>
-                    </svg>
-                <form id="contact-form" action="#" onsubmit="return validate()" method="POST">
-                    <div id="form-container">
-                    <div class="form-group">
-                    <label for="FormControlInput1">Full Name</label>
-                    <input type="text" class="form-control" id="FormControlInput1" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="FormControlInput3">Email</label>
-                    <input type="email" class="form-control" id="FormControlInput3" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <label for="FormControlInput5">Message</label>
-                    <textarea class="message" col="4" row="5" id="FormControlInput6" placeholder="Message here..."></textarea>
-                </div>
-                <div class="form-group">
-                    <input type="submit" value="Submit">
-                </div>
-            </div>
-        </form>
-    </section>
             <!------------------------navigation bar in mobile view--------------------------------------->
             <div class="main-nav" id="nav">
                 <a href="#home" class=" menu-link nav menu-active" ><i class="fas fa-home"></i></a>
@@ -272,6 +278,5 @@
                 <a href="#contact" class="menu-link nav"><i class="fas fa-address-book"></i></a>
             </div>
         </div>
-            
     </body>
 </xhtml>
